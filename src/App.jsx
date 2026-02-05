@@ -32,8 +32,11 @@ function App() {
         <img src={reactLogo} className='logos'></img>
       </div>
 
-      <main style={{ paddingTop: '100px' }} className='gridContainer'>
-        <PhotoGrid photos={imagenes} columnWidth={'150px'} />
+      <main className='gridContainer'>
+        <PhotoGrid
+          fotos={imagenes} //De esta variable se obtienen las imagenes, le estamos asignando a la variable "fotos" que tenemos en el prop de grid la variable "imagenes" para que esta tenga las imagenes que necesita
+          columnWidth={'150px'} //Esta Variable es el ancho de las columnas
+        />
       </main>
 
     </>

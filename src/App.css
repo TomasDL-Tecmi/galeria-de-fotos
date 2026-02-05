@@ -46,8 +46,12 @@ body {
   width: 75px;
 }
 
+/* Grid */
+
 .cuadricula-fotos {
   column-width: var(--grid-width, 150px);
+  /*se carga la variable y en caso de que no se le pase un valor, se carga el valor por defecto*/
+
   column-gap: 15px;
   padding: 0px;
 }
@@ -58,4 +62,8 @@ body {
   display: block;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+.gridContainer {
+  padding-top: 100px;
 }

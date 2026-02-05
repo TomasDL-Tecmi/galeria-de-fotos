@@ -1,14 +1,17 @@
-import react from "react";
-
-function PhotoGrid({ photos, columnWidth }) {
+function PhotoGrid({ fotos, columnWidth }) {
     const gridStyle = {
         '--grid-width': columnWidth,
     }
     return (
+
         <div className='cuadricula-fotos' style={gridStyle}>
-            {photos.map((photoUrl, index) => (
+
+            {fotos.map((photoUrl, index) => (
+
                 <div key={index} className='foto-item'>
+
                     <img src={photoUrl} alt={`fotoCargada ${index}`} />
+
                 </div>
             ))}
         </div>
