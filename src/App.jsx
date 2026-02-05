@@ -18,7 +18,8 @@ function App() {
     'https://i.pinimg.com/736x/d6/b1/f3/d6b1f319080739d8289701a84323f023.jpg',
     'https://i.pinimg.com/736x/2e/6d/37/2e6d37ccf0485ccad08274f4653b4803.jpg',
     'https://i.pinimg.com/736x/be/b5/0b/beb50ba8b207c7f9b3fa92e9870169a0.jpg',
-    'https://i.pinimg.com/1200x/7f/08/31/7f0831c7be63cde114466306908175a5.jpg'
+    'https://i.pinimg.com/1200x/7f/08/31/7f0831c7be63cde114466306908175a5.jpg',
+    'https://i.pinimg.com/736x/66/19/ea/6619eaf225105242eb16245c3486bf37.jpg'
   ];
   const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 
