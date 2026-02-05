@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import PhotoGrid from './props/grid.jsx'
+import Viewer from './props/viewer.jsx'
 
 function App() {
   const imagenes = [
@@ -19,9 +20,14 @@ function App() {
     'https://i.pinimg.com/736x/be/b5/0b/beb50ba8b207c7f9b3fa92e9870169a0.jpg',
     'https://i.pinimg.com/1200x/7f/08/31/7f0831c7be63cde114466306908175a5.jpg'
   ];
+  const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 
   return (
     <>
+      <Viewer
+        imagenSrc={imagenSeleccionada}
+        onCerrar={() => setImagenSeleccionada(null)} />
+
       <div className='encabezado'>
         <img src="Logo-ant.png" className='logos'></img>
 
@@ -38,6 +44,7 @@ function App() {
         <PhotoGrid
           fotos={imagenes} //De esta variable se obtienen las imagenes, le estamos asignando a la variable "fotos" que tenemos en el prop de grid la variable "imagenes" para que esta tenga las imagenes que necesita
           columnWidth={'150px'} //Esta Variable es el ancho de las columnas
+          onClick={setImagenSeleccionada}
         />
       </main>
 

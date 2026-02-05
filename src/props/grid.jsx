@@ -1,4 +1,4 @@
-function PhotoGrid({ fotos, columnWidth }) {
+function PhotoGrid({ fotos, columnWidth, onClick }) {
     const gridStyle = {
         '--grid-width': columnWidth,
     }
@@ -10,7 +10,11 @@ function PhotoGrid({ fotos, columnWidth }) {
 
                 <div key={index} className='foto-item'>
 
-                    <img src={photoUrl} alt={`fotoCargada ${index}`} />
+                    <img
+                        src={photoUrl}
+                        alt={`fotoCargada ${index}`}
+                        onClick={() => onClick(photoUrl)}
+                    />
 
                 </div>
             ))}
