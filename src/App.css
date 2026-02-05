@@ -49,6 +49,7 @@ body {
 /* Grid */
 
 .cuadricula-fotos {
+  margin-top: 50px;
   column-width: var(--grid-width, 150px);
   /*se carga la variable y en caso de que no se le pase un valor, se carga el valor por defecto*/
 

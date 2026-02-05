@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import PhotoGrid from './props/grid.jsx'
 
@@ -16,17 +15,20 @@ function App() {
     'https://i.pinimg.com/736x/cd/f7/4b/cdf74b7657c9a52f51fc765ead1e8692.jpg',
     'https://i.pinimg.com/736x/0e/5e/67/0e5e677b360f7322d137f45feaeb431e.jpg',
     'https://i.pinimg.com/736x/d6/b1/f3/d6b1f319080739d8289701a84323f023.jpg',
-    'https://i.pinimg.com/736x/2e/6d/37/2e6d37ccf0485ccad08274f4653b4803.jpg'
+    'https://i.pinimg.com/736x/2e/6d/37/2e6d37ccf0485ccad08274f4653b4803.jpg',
+    'https://i.pinimg.com/736x/be/b5/0b/beb50ba8b207c7f9b3fa92e9870169a0.jpg',
+    'https://i.pinimg.com/1200x/7f/08/31/7f0831c7be63cde114466306908175a5.jpg'
   ];
 
   return (
     <>
       <div className='encabezado'>
-        <img src={viteLogo} className='logos'></img>
+        <img src="Logo-ant.png" className='logos'></img>
 
         <div>
           <h1 className='title'>Galeria de fotos</h1>
           <h2 className='title'>Con React y Vite</h2>
+          <p className='title'>De los creadores de AntHill que aun no sale ajaja</p>
         </div>
 
         <img src={reactLogo} className='logos'></img>
