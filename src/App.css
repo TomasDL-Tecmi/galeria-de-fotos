@@ -5,6 +5,7 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  background-color: rgb(23, 23, 23);
 }
 
 #root {
@@ -18,7 +19,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   padding: 20px;
   box-sizing: border-box;
 
@@ -30,8 +31,9 @@ body {
   z-index: 1000;
 
   /* Color de fondo */
-  background-color: #42001B;
-  box-shadow: 0 2px 15px black;
+  background-color: rgb(23, 23, 23);
+  box-shadow: 0 0px 15px rgb(255, 0, 0);
+  border-bottom: 1px solid rgb(255, 0, 0);
 }
 
 .title {
@@ -44,6 +46,12 @@ body {
 
 .logos {
   width: 75px;
+  filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.5));
+}
+
+.logos-react {
+  width: 75px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 255, 251, 0.5));
 }
 
 /* Grid */
@@ -63,6 +71,13 @@ body {
   display: block;
   border-radius: 8px;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.foto-item img:hover {
+  opacity: 0.4;
+  transform: scale(1.05);
 }
 
 .gridContainer {
@@ -90,4 +105,19 @@ body {
   object-fit: contain;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 0, 0);
+  background: black;
+  margin: 10px;
+  box-shadow: 0 0px 15px rgba(255, 0, 0, 0.5);
+}
+
+.cerrar:hover {
+  border-color: rgba(255, 0, 0, 0.437);
 }

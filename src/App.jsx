@@ -19,7 +19,10 @@ function App() {
     'https://i.pinimg.com/736x/2e/6d/37/2e6d37ccf0485ccad08274f4653b4803.jpg',
     'https://i.pinimg.com/736x/be/b5/0b/beb50ba8b207c7f9b3fa92e9870169a0.jpg',
     'https://i.pinimg.com/1200x/7f/08/31/7f0831c7be63cde114466306908175a5.jpg',
-    'https://i.pinimg.com/736x/66/19/ea/6619eaf225105242eb16245c3486bf37.jpg'
+    'https://i.pinimg.com/736x/66/19/ea/6619eaf225105242eb16245c3486bf37.jpg',
+    'https://i.pinimg.com/736x/fd/cf/89/fdcf89d8fbbddab4a7f2b49ab3198e20.jpg',
+    'https://i.pinimg.com/1200x/76/87/b4/7687b4fa5769e4fecddf3481b0e35e40.jpg',
+    'https://i.pinimg.com/originals/5a/65/ec/5a65ec328259e4cc7d0bcad2982d3c31.gif'
   ];
   const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 
@@ -38,7 +41,7 @@ function App() {
           <p className='title'>De los creadores de AntHill que aun no sale ajaja</p>
         </div>
 
-        <img src={reactLogo} className='logos'></img>
+        <img src={reactLogo} className='logos-react'></img>
       </div>
 
       <main className='gridContainer'>

@@ -6,7 +6,7 @@ function Viewer({ imagenSrc, onCerrar }) {
     return (
         <div className='viewer' onClick={onCerrar}>
             <img src={imagenSrc} alt="imagenAmpliada" onClick={(e) => e.stopPropagation()} />
-            <button onClick={onCerrar}>Cerrar</button>
+            <button className='cerrar' onClick={onCerrar}>Cerrar</button>
         </div>
     )
 }
