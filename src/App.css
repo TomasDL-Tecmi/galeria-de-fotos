@@ -32,7 +32,6 @@ body {
 
   /* Color de fondo */
   background-color: rgb(23, 23, 23);
-  box-shadow: 0 0px 15px rgb(255, 0, 0);
   border-bottom: 1px solid rgb(255, 0, 0);
 }
 

@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 function PhotoGrid({ fotos, columnWidth, onClick }) {
     const gridStyle = {
         '--grid-width': columnWidth,
@@ -10,10 +12,16 @@ function PhotoGrid({ fotos, columnWidth, onClick }) {
 
                 <div key={index} className='foto-item'>
 
-                    <img
+                    <motion.img
                         src={photoUrl}
                         alt={`fotoCargada ${index}`}
                         onClick={() => onClick(photoUrl)}
+                        layoutId={photoUrl}
+                        transition={{
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.1
+                        }}
                     />
 
                 </div>

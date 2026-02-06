@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import PhotoGrid from './props/grid.jsx'
 import Viewer from './props/viewer.jsx'
+import { AnimatePresence } from 'framer-motion'
 
 function App() {
   const imagenes = [
@@ -28,9 +29,13 @@ function App() {
 
   return (
     <>
-      <Viewer
-        imagenSrc={imagenSeleccionada}
-        onCerrar={() => setImagenSeleccionada(null)} />
+      <AnimatePresence>
+        {imagenSeleccionada && (
+          <Viewer
+            imagenSrc={imagenSeleccionada}
+            onCerrar={() => setImagenSeleccionada(null)} />
+        )};
+      </AnimatePresence>
 
       <div className='encabezado'>
         <img src="Logo-ant.png" className='logos'></img>
